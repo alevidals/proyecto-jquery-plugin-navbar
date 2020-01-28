@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('body').navbarAle('addBar', 'header');
+    $('body').navbarAle('addBar', 'header', 'down');
     $('.header').navbarAle('addElement', 'inicio', 'index.html');
     $('.header').navbarAle('addElement', 'sobre nosotros', 'about-us.html');
     $('.header').navbarAle('addElement', 'comidas');
@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 
     $('body').append('<br><br><br><br><br><br><br><br><br><br><br><br><br>');
-    $('body').navbarAle('addBar', 'footer');
+    $('body').navbarAle('addBar', 'footer', 'right');
     $('.footer').navbarAle('addElement', 'inicio', 'index.html');
     $('.footer').navbarAle('addElement', 'sobre nosotros', 'about-us.html');
     $('.footer').navbarAle('addElement', 'ordenadores');

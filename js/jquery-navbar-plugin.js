@@ -1,13 +1,34 @@
 (function ($) {
+
+    const RIGHT = 'right';
+    const DOWN = 'down';
+    const FADE = 'fade';
+
     var methods = {
 
         /**
          * Crea un div vacío con una clase que recibirá el valor del parámetro name.
          * @author Alejandro Vidal
          * @param name El nombre de la clase que se añadirá al elemento.
+         * @param animation El tipo de animación, puede ser: right, down, fade. Puede ser omitido si no se quiere animación.
          */
-        addBar: function (name) {
+        addBar: function (name, animation) {
             $(this).append(`<div class="${name}"></div>`);
+            $(`.${name}`).hide();
+            switch (animation) {
+                case RIGHT:
+                    $(`.${name}`).animate({
+                        width: 'toggle'
+                    }, 1000);
+                    break;
+                case DOWN:
+                    $(`.${name}`).slideDown();
+                case FADE:
+                    $(`.${name}`).fadeIn();
+                default:
+                    $(`.${name}`).show();
+                    break;
+            }
         },
 
         /**

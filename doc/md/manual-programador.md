@@ -2,9 +2,9 @@
 
 ## **Funciones**
 
-### * **addBar(name)**
+### * **addBar(name, animation)**
 
-* Crea un div vacío con una clase que recibirá el valor del parámetro  **name**.
+* Crea un div vacío con una clase que recibirá el valor del parámetro  **name**. El parámetro  **animation** es para indicar el tipo de animación y puede tomar los valores: down, right o fate. Este último puede ser omitido si no deseamos animación.
 
 ### * **addElement(name, to)**
 
