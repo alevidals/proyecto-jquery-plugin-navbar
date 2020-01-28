@@ -1,0 +1,12 @@
+ul {
+    margin: 0;
+    list-style: none;
+    height: 100%;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    text-transform: uppercase;
+}
