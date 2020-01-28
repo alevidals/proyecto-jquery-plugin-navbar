@@ -5,13 +5,16 @@
             $(`.${name}`).append(`<ul class="${name}-ul"></ul>`);
         },
         addElement: function(name) {
-            $(`.${$(this).attr('class')}-ul`).append(`<li id="${replaceWhiteSpace(name)}">${name}</li>`)
+            $(`.${$(this).attr('class')}-ul`).append(`<li id="${replaceWhiteSpace(name)}" class="li-item">${name}</li>`)
         },
         removeElement: function(name) {
-            console.log($(this).length);
-            
-            $(this).remove();
-        }
+            if ($(this).length && $(this).attr('class') == 'li-item') {
+                $(this).remove();
+            }
+        },
+        // addOption: function(name) {
+
+        // }
     };
     $.fn.navbarAle = function (method) {
         // Si existe la función la llamamos
