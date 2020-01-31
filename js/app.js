@@ -10,8 +10,6 @@ $(document).ready(function () {
     $('#comidas').navbarAle('addOption', 'ordenadores', 'ordenadores.html');
     $('#comidas').navbarAle('removeOption', 'ordenadores');
 
-
-    $('body').append('<br><br><br><br><br><br><br><br><br><br><br><br><br>');
     $('body').navbarAle('addBar', 'footer', 'right');
     $('.footer').navbarAle('addElement', 'inicio', 'index.html');
     $('.footer').navbarAle('addElement', 'sobre nosotros', 'about-us.html');

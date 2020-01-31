@@ -29,7 +29,6 @@ li {
     min-width: 160px;
     height: inherit;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    /* padding: 12px 16px; */
     z-index: 1;
 }
 
@@ -52,17 +51,18 @@ li {
 .dropdown-li a {
     display: block;
     color: white;
-    /* background-color: blue; */
     padding: 10px;
 }
-
-/* .dropdown-li a:hover {
-    background-color: aqua;
-} */
 
 /* CONFIGURACIÓN DEL USUARIO */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    background: #a8edea;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #a8edea, #fed6e3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a8edea, #fed6e3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 .header {
     height: 3em;
@@ -92,6 +92,7 @@ li {
     height: 3em;
     background-color: green;
     font-family: Roboto;
+    margin-top: 160px;
 }
 
 .footer .li-item a, .footer .li-item {
@@ -109,4 +110,36 @@ li {
 
 .footer .submenu-item:hover {
     background-color: rgb(0, 100, 0);
+}
+
+.header, .footer {
+    font-weight: bold;
+}
+
+/* APARTE */
+
+.info {
+    text-transform: uppercase;
+    font-family: Roboto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.info h1 {
+    font-size: 40px;
+}
+
+.info h2 {
+    font-size: 32px;
+}
+
+.info a {
+    text-decoration: underline;
+}
+
+.info a:hover {
+    color: cyan;
 }
