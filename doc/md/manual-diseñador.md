@@ -1,7 +1,5 @@
 # JQuery Navbar Manual Diseñador - Alejandro Vidal
 
-# JQuery Navbar Manual Diseñador
-
 >Aviso: en todo el manual donde aparezca NOMBRE sustitúyelo por la clase que le hayas añadido a la barra. A veces será preciso usar la etiqueta !important.
 
 ### `.nombre`
@@ -16,7 +14,7 @@
 
 - Para cambiar las propiedades de los elementos de la barra de navegación cuando hacemos hover. AVISO: no de las opciones del submenu.
 
-### **.nombre .submenu-item**
+### `**.nombre .submenu-item**`
 
 - Para cambiar el diseño de los elementos del submenu.
 
